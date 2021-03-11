@@ -84,10 +84,9 @@ lq <- laquinta %>%
 
 Knit, *commit, and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
-
 4.  Which states have the most and fewest Denny's locations? What about La Quinta? Is this surprising? Why or why not?
 
-For Denny's - Most
+For Denny's - most = CA
 
 ```{r}
 dn %>%
@@ -97,7 +96,7 @@ dn %>%
 
 \textcolor{red}{CA, which stands for California has the most Denny's locations. It is not surprising because it is the largest state in the US by population.}
 
-For Denny's - Fewest
+For Denny's - Fewest=DE
 
 ```{r}
 dn %>%
@@ -107,7 +106,7 @@ dn %>%
 
 \textcolor{red}{DE, Delaware has the fewest locations. It is not surprising because it is one of the smallest US states by population.}
 
-For La Quinta - Most
+For La Quinta - Most=DE
 
 ```{r}
 lq %>%
@@ -117,7 +116,7 @@ lq %>%
 
 \textcolor{red}{TX, Texas has the most La Quinta locations. The surprising thing is that Texas has more locations than California. This despite the fact that California has more population and has stronger economy than Texas}
 
-For La Quinta - Fewest
+For La Quinta - Fewest=tx
 
 ```{r}
 lq %>%
@@ -132,7 +131,7 @@ lq %>%
 
 \textcolor{red}{We are interested in the number of locations per state, which we could find in Denny's or La Quinta's datasets, and the area of each state, which is only available in the `states` dataset, which we imported earlier from the Data folder using the code `states <- read_csv("data/states.csv")`.}
 
-Joining Denny's and states
+Joining Denny's and states=AG
 
 ```{r}
 dn %>%
@@ -140,7 +139,7 @@ dn %>%
   inner_join(states, by = c("state" = "abbreviation"))
 ```
 
-Joining La Quinta's and states
+Joining La Quinta's and states=AK
 
 ```{r}
 lq %>%
