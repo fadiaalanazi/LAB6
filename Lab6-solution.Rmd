@@ -1,11 +1,11 @@
 ---
 title: "Lab 6 - La Quinta is Spanish for next to Denny's, Pt. 1"
 subtitle: "Visualizing spatial data"
-author: Musab Isah
+author: fadeyah alanazi
 output: pdf_document
 ---
 
-Student ID: 
+Student ID: 2201001182
 
 
 ```{r include = FALSE}
@@ -37,24 +37,31 @@ states <- read_csv("data/states.csv")
 1.  What are the dimensions of the Denny's dataset?
     (Hint: Use inline R code and functions like `nrow` and `ncol` to compose your answer.) What does each row in the dataset represent?
     What are the variables?
+    row=1643 , column =6
     
 ```{r}
 dim(dennys)
 #head(dennys)
 ```
 \textcolor{red}{The `dennys` dataset has 1,643 rows and 6 columns. Each row represents location information about a denny's restaurant.}
-
+yhe row it is about the resturant adress (more information about it)
+column (adress , city , stat ,zip , longitude , latitude )
 
 2.  What are the dimensions of the La Quinta's dataset? 
     What does each row in the dataset represent?
     What are the variables?
-    
+      row=909 , column =6
     
 ```{r}
 dim(laquinta)
 #head(laquinta)
 ```
-\textcolor{red}{This dataset has 909 rows and 6 columns. Each row represents location information about laquinta's hotel.}
+\textcolor{red}{This dataset has 909 rows and 6 columns. Each row 
+represents location information about laquinta's hotel.}
+
+the row it is about the hotel adress (more information about it)
+column (adress , city , stat ,zip , longitude , latitude )
+
 
 Knit, *commit, and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
